@@ -1,0 +1,36 @@
+name: RASn CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create .env file from secret
+        run: |
+          printf '%s' "${{ secrets.rasn_main }}" > .env
+
+      # - name: Build and start containers
+      #   run: docker-compose build
+
+      # - name: Run flake8 lint
+      #   run: docker-compose run --rm app flake8 .
+
+      # - name: Run tests
+      #   run: docker-compose run --rm app pytest
+
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.

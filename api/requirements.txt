@@ -1,0 +1,12 @@
+psycopg2-binary
+clickhouse_driver
+
+fastapi
+uvicorn[standard]
+
+pika
+aio_pika
+
+python-dotenv
+
+asyncio
