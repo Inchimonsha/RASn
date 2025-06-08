@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from src.config import origins
+from src.core.config import origins
 from src.routers import dashboard
 
 app = FastAPI()

@@ -6,4 +6,4 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt pytest
 
 COPY . .
-CMD ["pytest", "--junitxml=results/test-results.xml"]
+CMD ["pytest", "--junitxml=/utils/testing/results/test-results.xml"]
