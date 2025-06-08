@@ -14,9 +14,18 @@ RABBITMQ_DEFAULT_USER = os.getenv("RABBITMQ_DEFAULT_USER")
 RABBITMQ_DEFAULT_PASS = os.getenv("RABBITMQ_DEFAULT_PASS")
 
 POSTGRES_HOST = os.getenv("POSTGRES_HOST")
+POSTGRES_PORT = os.getenv("POSTGRES_PORT")
 POSTGRES_USER = os.getenv("POSTGRES_USER")
 POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
 POSTGRES_DB = os.getenv("POSTGRES_DB")
+
+POSTGRES_PARAMS = {
+    "host": POSTGRES_HOST,
+    "dbname": POSTGRES_DB,
+    "user": POSTGRES_USER,
+    "password": POSTGRES_PASSWORD,
+    "port": POSTGRES_PORT,
+}
 
 origins = [
     "http://localhost",
