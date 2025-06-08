@@ -126,7 +126,19 @@ services:
     networks:
       - custom_network
 
-# SERVICES
+  # SERVICES
+
+  # FRONTEND
+
+  client:
+    container_name: client
+    build:
+      context: ./frontend/client
+      dockerfile: Dockerfile
+    ports:
+      - "${CLIENT_PORT}:3000"
+    depends_on:
+      - api-main
 
 # VOLUMES
 
