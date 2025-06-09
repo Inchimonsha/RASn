@@ -1,0 +1,20 @@
+psycopg2-binary
+clickhouse_driver
+
+fastapi
+uvicorn[standard]
+
+pika
+aio_pika
+
+python-dotenv
+
+asyncio
+
+torch
+
+transformers
+spacy
+nltk
+
+ru_core_news_md @ https://github.com/explosion/spacy-models/releases/download/ru_core_news_md-3.7.0/ru_core_news_md-3.7.0-py3-none-any.whl

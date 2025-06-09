@@ -50,6 +50,16 @@ export function NavBar() {
               >
                 Новости
               </Link>
+              <Link
+                to="/classificator"
+                className={`px-3 py-2 rounded-md text-sm font-medium ${
+                  location.pathname === "/classificator"
+                    ? "bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 focus:ring-offset-2 transition"
+                    : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-offset-2 transition"
+                }`}
+              >
+                Классификатор
+              </Link>
             </>
           </div>
 

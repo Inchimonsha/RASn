@@ -29,7 +29,16 @@ export default function HomePage() {
             <FeatureCardComponent
               icon={Newspaper}
               title="Будьте в курсе"
-              description="Следите за быстрыми изменениями в сфере ИИ с помощью наших тщательно подобранных новостей и обновлений."
+              description="Просматривайте новости с разных источников."
+            />
+          </Link>
+        </div>
+        <div className="transition-shadow transition-transform duration-300 rounded-lg hover:shadow-lg hover:-translate-y-1 hover:bg-blue-50">
+          <Link to="/classificator">
+            <FeatureCardComponent
+              icon={BookOpen}
+              title="Классификация новостей"
+              description="Делайте классификацию новостных статей."
             />
           </Link>
         </div>

@@ -2,12 +2,13 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from src.core.config import origins
-from src.routers import dashboard
+from src.routers import news
+
 
 app = FastAPI()
 
 # ~~~~~~~ ROUTES ~~~~~~~
-app.include_router(dashboard.router)
+app.include_router(news.router, prefix="/api")
 # ~~~~~~~~~~~~~~~~~~~~~~
 
 app.add_middleware(

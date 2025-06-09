@@ -8,6 +8,7 @@ import { RootLayout } from "./features/layouts/RootLayout";
 
 import HomePage from "./features/pages/home/HomePage";
 import { NewsPage } from "./features/pages/news/NewsPage";
+import { TextClassifier } from "./features/pages/classificator/TextClassifier";
 import { NotFoundPage } from "./features/pages/extra/NotFoundPage";
 
 import "./styles/App.css";
@@ -43,6 +44,7 @@ function App() {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<HomePage />} />
         <Route path="news" element={<NewsPage />} />
+        <Route path="classificator" element={<TextClassifier />} />
       </Route>
 
       <Route path="*" element={<NotFoundPage />} />
